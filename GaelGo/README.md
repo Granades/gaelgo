@@ -25,6 +25,16 @@ Search → filter → view detail → reserve interest → confirmation
 - **Web app** (client)
 - Database with packages + interest reservations
 
+## Competition & Differentiation
+Most travel OTAs offer generic package listings and flexible search, but **few focus on Dublin departures** or **fixed‑budget discovery**. GaelGo differentiates by:
+- **Budget‑first search** (200/300/400 EUR)
+- **Dublin‑only departures** (simple, local focus)
+- **Mobile + web in sync** (same data, same flow)
+- **No payment flow** (redirect to provider with real prices)
+
+## Product statement
+**GaelGo helps budget‑focused travelers in Ireland find fixed‑price weekend trips from Dublin, fast.**
+
 ## Next steps
 1. Define data model
 2. Design basic endpoints
