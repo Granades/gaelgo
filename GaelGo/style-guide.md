@@ -3,17 +3,17 @@
 ## Brand keywords
 Clean · Budget‑first · Trustworthy · Simple
 
-## Color palette
-- **Primary (Ocean Blue):** #1F6FEB
-- **Primary Dark:** #1A54B8
-- **Accent (Mint):** #2ED3B7
-- **Background:** #F7F9FC
-- **Surface:** #FFFFFF
-- **Border:** #E2E8F0
-- **Text Primary:** #111827
-- **Text Secondary:** #6B7280
-- **Success:** #10B981
-- **Warning:** #F59E0B
+## Color palette (Temple Bar inspired)
+- **Primary (Gold):** #D4AF37
+- **Primary Dark:** #A9872A
+- **Accent (Burgundy):** #7B1E3A
+- **Background:** #0F0F10
+- **Surface:** #1A1B1E
+- **Border:** #2A2D33
+- **Text Primary:** #F5F3EE
+- **Text Secondary:** #C9C2B8
+- **Success:** #2E8B57
+- **Warning:** #C7782A
 
 ## Typography
 - **Font:** Inter (fallback: Arial, sans‑serif)
