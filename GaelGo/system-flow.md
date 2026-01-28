@@ -2,8 +2,8 @@
 
 ## High‑level architecture
 - **Clients:** Mobile app + Web app
-- **Backend:** REST API (single source of truth)
-- **Database:** Stores packages + interest reservations + favorites
+- **Backend:** Java (Spring Boot) REST API (single source of truth)
+- **Database:** MySQL stores packages + interest reservations + favorites
 
 ```
 [Mobile App]        [Web App]

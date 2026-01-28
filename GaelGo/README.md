@@ -20,10 +20,10 @@ Many people want to travel on a fixed budget with flexible dates, but they strug
 Search → filter → view detail → reserve interest → confirmation
 
 ## Proposed architecture (high level)
-- **Single backend** (REST API)
-- **Mobile app** (client)
-- **Web app** (client)
-- Database with packages + interest reservations
+- **Backend:** Java (Spring Boot) REST API
+- **Mobile app:** Kotlin (Android)
+- **Web app:** React
+- **Database:** MySQL (packages + interest reservations)
 
 ## Competition & Differentiation
 Most travel OTAs offer generic package listings and flexible search, but **few focus on Dublin departures** or **fixed‑budget discovery**. GaelGo differentiates by:
