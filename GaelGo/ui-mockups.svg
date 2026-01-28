@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
   <style>
-    .screen{fill:#ffffff;stroke:#333;stroke-width:2;rx:18;ry:18}
-    .header{fill:#f0f3f7;stroke:#c7cdd4;stroke-width:1}
-    .card{fill:#f7f7fb;stroke:#c7cdd4;stroke-width:1;rx:10;ry:10}
-    .title{font:700 18px Arial;fill:#111}
-    .label{font:14px Arial;fill:#111}
-    .note{font:12px Arial;fill:#666}
-    .cta{fill:#1f6feb;stroke:#1f6feb;rx:8;ry:8}
-    .ctatxt{font:700 12px Arial;fill:#fff}
-    .chip{fill:#e6eefc;stroke:#c2d4f7;rx:10;ry:10}
+    .screen{fill:#1A1B1E;stroke:#2A2D33;stroke-width:2;rx:18;ry:18}
+    .header{fill:#0F0F10;stroke:#2A2D33;stroke-width:1}
+    .card{fill:#1F2125;stroke:#2A2D33;stroke-width:1;rx:10;ry:10}
+    .title{font:700 18px Arial;fill:#F5F3EE}
+    .label{font:14px Arial;fill:#F5F3EE}
+    .note{font:12px Arial;fill:#C9C2B8}
+    .cta{fill:#D4AF37;stroke:#D4AF37;rx:8;ry:8}
+    .ctatxt{font:700 12px Arial;fill:#0F0F10}
+    .chip{fill:#7B1E3A;stroke:#7B1E3A;rx:10;ry:10}
   </style>
 
   <text x="30" y="30" class="title">GaelGo — UI Mockups (Mobile)</text>

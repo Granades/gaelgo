@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
   <style>
-    .box{fill:#f7f7fb;stroke:#333;stroke-width:2;rx:10;ry:10}
-    .title{font:700 18px Arial;fill:#111}
-    .label{font:14px Arial;fill:#111}
-    .arrow{stroke:#333;stroke-width:2;marker-end:url(#arrow)}
-    .note{font:12px Arial;fill:#444}
+    .box{fill:#1A1B1E;stroke:#2A2D33;stroke-width:2;rx:10;ry:10}
+    .title{font:700 18px Arial;fill:#F5F3EE}
+    .label{font:14px Arial;fill:#F5F3EE}
+    .arrow{stroke:#D4AF37;stroke-width:2;marker-end:url(#arrow)}
+    .note{font:12px Arial;fill:#C9C2B8}
   </style>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L9,3 L0,6 Z" fill="#333" />
+      <path d="M0,0 L9,3 L0,6 Z" fill="#D4AF37" />
     </marker>
   </defs>
 
