@@ -1,0 +1,27 @@
+{
+  "colors": {
+    "primary": "#1F6FEB",
+    "primaryDark": "#1A54B8",
+    "accent": "#2ED3B7",
+    "background": "#F7F9FC",
+    "surface": "#FFFFFF",
+    "border": "#E2E8F0",
+    "textPrimary": "#111827",
+    "textSecondary": "#6B7280",
+    "success": "#10B981",
+    "warning": "#F59E0B"
+  },
+  "radius": {
+    "card": 12,
+    "button": 10,
+    "input": 8
+  },
+  "spacing": [8, 16, 24, 32],
+  "typography": {
+    "fontFamily": "Inter, Arial, sans-serif",
+    "h1": {"size": 28, "weight": 700},
+    "h2": {"size": 22, "weight": 600},
+    "body": {"size": 16, "weight": 400},
+    "caption": {"size": 12, "weight": 400}
+  }
+}
