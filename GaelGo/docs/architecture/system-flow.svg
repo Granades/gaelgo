@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <style>
+    .box{fill:#1A1B1E;stroke:#2A2D33;stroke-width:2;rx:10;ry:10}
+    .title{font:700 18px Arial;fill:#F5F3EE}
+    .label{font:14px Arial;fill:#F5F3EE}
+    .arrow{stroke:#D4AF37;stroke-width:2;marker-end:url(#arrow)}
+    .note{font:12px Arial;fill:#C9C2B8}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#D4AF37" />
+    </marker>
+  </defs>
+
+  <text x="30" y="35" class="title">GaelGo — System Flow</text>
+
+  <!-- Boxes -->
+  <rect x="60" y="90" width="220" height="90" class="box" />
+  <text x="85" y="130" class="label">Mobile App</text>
+  <text x="85" y="155" class="note">Search / Detail / Reserve</text>
+
+  <rect x="60" y="230" width="220" height="90" class="box" />
+  <text x="85" y="270" class="label">Web App</text>
+  <text x="85" y="295" class="note">Same data &amp; flow</text>
+
+  <rect x="360" y="160" width="220" height="110" class="box" />
+  <text x="395" y="205" class="label">REST API</text>
+  <text x="395" y="230" class="note">Packages / Reservations</text>
+  <text x="395" y="250" class="note">Favorites</text>
+
+  <rect x="660" y="160" width="200" height="110" class="box" />
+  <text x="690" y="205" class="label">Database</text>
+  <text x="690" y="230" class="note">Seed packages</text>
+  <text x="690" y="250" class="note">Interest records</text>
+
+  <!-- Arrows -->
+  <line x1="280" y1="135" x2="360" y2="195" class="arrow" />
+  <line x1="280" y1="275" x2="360" y2="235" class="arrow" />
+  <line x1="580" y1="215" x2="660" y2="215" class="arrow" />
+
+  <!-- Notes -->
+  <text x="300" y="115" class="note">HTTPS</text>
+  <text x="590" y="205" class="note">SQL</text>
+</svg>

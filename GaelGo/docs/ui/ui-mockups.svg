@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <style>
+    .screen{fill:#1A1B1E;stroke:#2A2D33;stroke-width:2;rx:18;ry:18}
+    .header{fill:#0F0F10;stroke:#2A2D33;stroke-width:1}
+    .card{fill:#1F2125;stroke:#2A2D33;stroke-width:1;rx:10;ry:10}
+    .title{font:700 18px Arial;fill:#F5F3EE}
+    .label{font:14px Arial;fill:#F5F3EE}
+    .note{font:12px Arial;fill:#C9C2B8}
+    .cta{fill:#D4AF37;stroke:#D4AF37;rx:8;ry:8}
+    .ctatxt{font:700 12px Arial;fill:#0F0F10}
+    .chip{fill:#7B1E3A;stroke:#7B1E3A;rx:10;ry:10}
+  </style>
+
+  <text x="30" y="30" class="title">GaelGo — UI Mockups (Mobile)</text>
+
+  <!-- Screen 1: Home/Search -->
+  <rect x="30" y="50" width="260" height="520" class="screen" />
+  <rect x="30" y="50" width="260" height="60" class="header" />
+  <text x="50" y="90" class="label">GaelGo</text>
+  <text x="50" y="130" class="note">Departure: Dublin</text>
+  <rect x="50" y="145" width="70" height="26" class="chip" /><text x="63" y="163" class="note">€200</text>
+  <rect x="125" y="145" width="70" height="26" class="chip" /><text x="138" y="163" class="note">€300</text>
+  <rect x="200" y="145" width="70" height="26" class="chip" /><text x="213" y="163" class="note">€400</text>
+  <rect x="50" y="185" width="200" height="30" class="card" />
+  <text x="60" y="205" class="note">Select date</text>
+  <rect x="50" y="230" width="200" height="34" class="cta" />
+  <text x="110" y="252" class="ctatxt">Search</text>
+  <text x="50" y="290" class="note">Suggested packages</text>
+  <rect x="50" y="310" width="200" height="60" class="card" />
+  <rect x="50" y="380" width="200" height="60" class="card" />
+  <rect x="50" y="450" width="200" height="60" class="card" />
+
+  <!-- Screen 2: List -->
+  <rect x="330" y="50" width="260" height="520" class="screen" />
+  <rect x="330" y="50" width="260" height="60" class="header" />
+  <text x="350" y="90" class="label">Packages</text>
+  <rect x="350" y="130" width="210" height="26" class="chip" /><text x="360" y="148" class="note">Filters: €300 · 2026‑05‑08</text>
+  <rect x="350" y="170" width="210" height="80" class="card" />
+  <rect x="350" y="260" width="210" height="80" class="card" />
+  <rect x="350" y="350" width="210" height="80" class="card" />
+  <rect x="350" y="440" width="210" height="80" class="card" />
+
+  <!-- Screen 3: Detail -->
+  <rect x="630" y="50" width="260" height="520" class="screen" />
+  <rect x="630" y="50" width="260" height="120" class="card" />
+  <text x="650" y="80" class="label">Dublin → Rome</text>
+  <text x="650" y="105" class="note">€300 · 4 nights</text>
+  <text x="650" y="145" class="note">Includes: flight, hotel</text>
+  <text x="650" y="190" class="note">Details...</text>
+  <rect x="650" y="400" width="200" height="34" class="cta" />
+  <text x="695" y="422" class="ctatxt">Reserve interest</text>
+  <text x="650" y="450" class="note">♡ Save</text>
+
+  <!-- Screen 4: Reserve -->
+  <rect x="930" y="50" width="260" height="520" class="screen" />
+  <rect x="930" y="50" width="260" height="60" class="header" />
+  <text x="950" y="90" class="label">Reserve interest</text>
+  <rect x="950" y="130" width="210" height="30" class="card" /><text x="960" y="150" class="note">Name</text>
+  <rect x="950" y="170" width="210" height="30" class="card" /><text x="960" y="190" class="note">Email</text>
+  <rect x="950" y="210" width="210" height="30" class="card" /><text x="960" y="230" class="note">Phone (optional)</text>
+  <rect x="950" y="260" width="210" height="34" class="cta" />
+  <text x="1035" y="282" class="ctatxt">Send</text>
+  <text x="950" y="320" class="note">Confirmation message</text>
+
+  <!-- Web Mockup (simple) -->
+  <text x="30" y="630" class="title">GaelGo — UI Mockups (Web)</text>
+  <rect x="30" y="650" width="1140" height="220" class="screen" />
+  <rect x="30" y="650" width="1140" height="50" class="header" />
+  <text x="50" y="682" class="label">GaelGo Web</text>
+  <rect x="50" y="720" width="260" height="120" class="card" />
+  <text x="60" y="745" class="note">Filters</text>
+  <rect x="340" y="720" width="260" height="120" class="card" />
+  <text x="350" y="745" class="note">Package card</text>
+  <rect x="620" y="720" width="260" height="120" class="card" />
+  <text x="630" y="745" class="note">Package card</text>
+  <rect x="900" y="720" width="260" height="120" class="card" />
+  <text x="910" y="745" class="note">Package card</text>
+</svg>
