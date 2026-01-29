@@ -35,8 +35,29 @@ Most travel OTAs offer generic package listings and flexible search, but **few f
 ## Product statement
 **GaelGo helps budget‑focused travelers in Ireland find fixed‑price weekend trips from Dublin, fast.**
 
-## Next steps
-1. Define data model
-2. Design basic endpoints
-3. Sketch app/web screens
-4. Create seed data
+## Project structure
+```
+GaelGo/
+  frontend/        # React (Vite) web app
+  backend/         # Spring Boot API (placeholder)
+  docs/            # Architecture, data, UI assets
+  TODO.md          # Ordered tasks (Sprint 1)
+```
+
+## How to run (frontend)
+```bash
+# Clone
+git clone https://github.com/Granades/gaelgo.git
+cd gaelgo/frontend
+
+# Install & run
+npm install
+npm run dev
+```
+Open: http://localhost:5173/
+
+## Collaboration
+Contributions are welcome. If you want to help, pick a task from `TODO.md` and open a PR.
+
+## Task list
+See **TODO.md** for the ordered Sprint 1 tasks.
