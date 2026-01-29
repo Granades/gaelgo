@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="820" viewBox="0 0 1100 820">
+  <style>
+    .screen{fill:#1A1B1E;stroke:#2A2D33;stroke-width:2;rx:18;ry:18}
+    .header{fill:#0F0F10;stroke:#2A2D33;stroke-width:1}
+    .card{fill:#1F2125;stroke:#2A2D33;stroke-width:1;rx:10;ry:10}
+    .title{font:700 18px Arial;fill:#F5F3EE}
+    .label{font:14px Arial;fill:#F5F3EE}
+    .note{font:12px Arial;fill:#C9C2B8}
+    .cta{fill:#D4AF37;stroke:#D4AF37;rx:8;ry:8}
+    .ctatxt{font:700 12px Arial;fill:#0F0F10}
+    .chip{fill:#7B1E3A;stroke:#7B1E3A;rx:10;ry:10}
+  </style>
+
+  <text x="30" y="30" class="title">GaelGo — Mobile Wireframes (Small‑first)</text>
+
+  <!-- Home/Search -->
+  <rect x="30" y="50" width="240" height="520" class="screen" />
+  <rect x="30" y="50" width="240" height="56" class="header" />
+  <text x="48" y="85" class="label">GaelGo</text>
+  <text x="48" y="125" class="note">Departure: Dublin</text>
+  <rect x="48" y="140" width="60" height="24" class="chip" /><text x="60" y="157" class="note">€200</text>
+  <rect x="112" y="140" width="60" height="24" class="chip" /><text x="124" y="157" class="note">€300</text>
+  <rect x="176" y="140" width="60" height="24" class="chip" /><text x="188" y="157" class="note">€400</text>
+  <rect x="48" y="175" width="170" height="28" class="card" />
+  <text x="56" y="193" class="note">Select date</text>
+  <rect x="48" y="215" width="170" height="32" class="cta" />
+  <text x="92" y="237" class="ctatxt">Search</text>
+  <text x="48" y="275" class="note">Suggested</text>
+  <rect x="48" y="295" width="170" height="56" class="card" />
+  <rect x="48" y="360" width="170" height="56" class="card" />
+  <rect x="48" y="425" width="170" height="56" class="card" />
+
+  <!-- List -->
+  <rect x="300" y="50" width="240" height="520" class="screen" />
+  <rect x="300" y="50" width="240" height="56" class="header" />
+  <text x="318" y="85" class="label">Packages</text>
+  <rect x="318" y="120" width="190" height="24" class="chip" />
+  <text x="326" y="137" class="note">€300 · 2026‑05‑08</text>
+  <rect x="318" y="155" width="190" height="72" class="card" />
+  <rect x="318" y="235" width="190" height="72" class="card" />
+  <rect x="318" y="315" width="190" height="72" class="card" />
+  <rect x="318" y="395" width="190" height="72" class="card" />
+
+  <!-- Detail -->
+  <rect x="570" y="50" width="240" height="520" class="screen" />
+  <rect x="570" y="50" width="240" height="120" class="card" />
+  <text x="588" y="82" class="label">Dublin → Rome</text>
+  <text x="588" y="104" class="note">€300 · 4 nights</text>
+  <text x="588" y="145" class="note">Includes: flight, hotel</text>
+  <text x="588" y="190" class="note">Details...</text>
+  <rect x="588" y="410" width="180" height="32" class="cta" />
+  <text x="628" y="432" class="ctatxt">Reserve</text>
+  <text x="588" y="468" class="note">♡ Save</text>
+
+  <!-- Reserve -->
+  <rect x="840" y="50" width="240" height="520" class="screen" />
+  <rect x="840" y="50" width="240" height="56" class="header" />
+  <text x="858" y="85" class="label">Reserve interest</text>
+  <rect x="858" y="125" width="190" height="28" class="card" /><text x="866" y="143" class="note">Name</text>
+  <rect x="858" y="165" width="190" height="28" class="card" /><text x="866" y="183" class="note">Email</text>
+  <rect x="858" y="205" width="190" height="28" class="card" /><text x="866" y="223" class="note">Phone (optional)</text>
+  <rect x="858" y="250" width="190" height="32" class="cta" />
+  <text x="936" y="272" class="ctatxt">Send</text>
+  <text x="858" y="312" class="note">Confirmation</text>
+</svg>
