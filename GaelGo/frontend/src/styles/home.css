@@ -1,7 +1,12 @@
 .page {
   padding: 24px;
-  background: #0F0F10;
   min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(15,15,16,0.88), rgba(15,15,16,0.98)),
+    url("../assets/ireland-hero.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
