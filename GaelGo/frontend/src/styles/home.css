@@ -5,7 +5,7 @@
 }
 
 .header {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .brand {
@@ -19,14 +19,29 @@
   margin-top: 6px;
 }
 
-.panel {
-  background: #1A1B1E;
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  padding: 20px;
   border: 1px solid #2A2D33;
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(123,30,58,0.35), rgba(15,15,16,0.95));
+}
+
+.heroLeft {
   display: grid;
   gap: 12px;
-  max-width: 520px;
+}
+
+.heroTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.heroNote {
+  color: #C9C2B8;
+  font-size: 13px;
 }
 
 .filters {
@@ -73,12 +88,59 @@
   border-radius: 10px;
   font-weight: 700;
   cursor: pointer;
+  width: 180px;
+}
+
+.heroRight {
+  display: grid;
+  align-items: center;
+}
+
+.featuredCard {
+  background: #1A1B1E;
+  border: 1px solid #2A2D33;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 140px;
+  display: grid;
+  gap: 6px;
+}
+
+.featuredTag {
+  color: #D4AF37;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.featuredTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.featuredMeta {
+  color: #C9C2B8;
+  font-size: 12px;
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.sectionTitle {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .grid {
-  margin-top: 24px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
@@ -86,37 +148,14 @@
   background: #1A1B1E;
   border: 1px solid #2A2D33;
   border-radius: 12px;
-  overflow: hidden;
+  height: 150px;
 }
 
-.cardImage {
-  height: 110px;
-  background: linear-gradient(135deg, #7B1E3A, #D4AF37);
-}
-
-.cardBody {
-  padding: 12px;
-}
-
-.cardTitle {
-  font-weight: 600;
-}
-
-.cardMeta {
-  color: #C9C2B8;
-  font-size: 12px;
-  margin: 6px 0 10px;
-}
-
-.ghost {
-  background: transparent;
-  color: #D4AF37;
-  border: 1px solid #D4AF37;
-  padding: 8px 10px;
-  border-radius: 8px;
-  cursor: pointer;
+.card.wide {
+  height: 160px;
 }
 
 .footer {
   margin-top: 32px;
+  color: #C9C2B8;
 }
