@@ -26,7 +26,11 @@
   padding: 20px;
   border: 1px solid #2A2D33;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(123,30,58,0.35), rgba(15,15,16,0.95));
+  background:
+    linear-gradient(135deg, rgba(15,15,16,0.75), rgba(15,15,16,0.95)),
+    url("../assets/ireland-hero.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .heroLeft {
