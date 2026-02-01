@@ -22,7 +22,7 @@
 - Navigation works between all pages.
 - URL reflects page (e.g., `/packages`, `/packages/1`, `/reserve`).
 
-**Status:** In progress
+**Status:** Done ✅
 
 ---
 
