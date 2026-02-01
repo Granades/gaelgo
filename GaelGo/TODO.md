@@ -22,6 +22,8 @@
 - Navigation works between all pages.
 - URL reflects page (e.g., `/packages`, `/packages/1`, `/reserve`).
 
+**Status:** In progress
+
 ---
 
 ## 2) Base Layout + Navigation
@@ -48,6 +50,8 @@
 
 **Acceptance**
 - Pages can import the array without errors.
+
+**Status:** Not started
 
 ---
 
