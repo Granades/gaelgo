@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from app.routes import health, info
 
 app = FastAPI(title="Nube API")
 
@@ -6,6 +7,5 @@ app = FastAPI(title="Nube API")
 def root():
     return {"message": "Nube FastAPI is running"}
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
+app.include_router(health.router)
+app.include_router(info.router)
