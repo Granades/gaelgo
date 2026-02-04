@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+  <style>
+    .bg{fill:#0F0F10}
+    .card{fill:#1A1B1E;stroke:#2A2D33;stroke-width:1;rx:12;ry:12}
+    .img{fill:url(#grad)}
+    .title{font:700 18px Arial;fill:#F5F3EE}
+    .meta{font:12px Arial;fill:#C9C2B8}
+    .price{font:700 16px Arial;fill:#D4AF37}
+    .chip{fill:#1F2125;stroke:#2A2D33;stroke-width:1;rx:10;ry:10}
+    .chipActive{fill:#7B1E3A;stroke:#7B1E3A;stroke-width:1;rx:10;ry:10}
+    .btn{fill:#D4AF37;rx:10;ry:10}
+    .btnText{font:700 12px Arial;fill:#0F0F10}
+    .label{font:700 16px Arial;fill:#F5F3EE}
+  </style>
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7B1E3A"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="900" height="560" />
+
+  <text x="40" y="40" class="label">PackageCard</text>
+  <rect x="40" y="60" width="260" height="260" class="card" />
+  <rect x="40" y="60" width="260" height="110" class="img" />
+  <text x="60" y="195" class="title">Dublin → Rome</text>
+  <text x="60" y="220" class="meta">4 nights · 2026‑05‑22</text>
+  <text x="60" y="245" class="price">€300</text>
+  <rect x="60" y="260" width="120" height="30" class="btn" />
+  <text x="88" y="280" class="btnText">View details</text>
+
+  <text x="360" y="40" class="label">Chips</text>
+  <rect x="360" y="60" width="70" height="28" class="chip" />
+  <text x="380" y="78" class="meta">€200</text>
+  <rect x="440" y="60" width="70" height="28" class="chipActive" />
+  <text x="460" y="78" class="meta">€300</text>
+  <rect x="520" y="60" width="70" height="28" class="chip" />
+  <text x="540" y="78" class="meta">€400</text>
+
+  <text x="360" y="140" class="label">PrimaryButton</text>
+  <rect x="360" y="160" width="140" height="36" class="btn" />
+  <text x="392" y="184" class="btnText">Search packages</text>
+</svg>

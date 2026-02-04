@@ -1,0 +1,21 @@
+.chip {
+
+    .packageMeta {
+        font-size: 12px;
+        color: #C9C2B8;
+    }
+
+    .packagePrice {
+        color: #D4AF37;
+        font-weight: 700;
+    }
+
+    .packageCTA {
+        margin-top: 8px;
+    }
+}
+
+.chipActive {
+    background: #7B1E3A;
+    border-color: #7B1E3A;
+}

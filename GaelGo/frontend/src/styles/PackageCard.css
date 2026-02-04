@@ -1,0 +1,18 @@
+.packageCard {
+    background: #1A1B1E;
+    border: 1px solid #2A2D33;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+}
+
+.packageImage {
+    height: 120px;
+    background: linear-gradient(135deg, #7B1E3A, #D4AF37);
+}
+
+.packageBody { padding: 12px; }
+.packageTitle { font-weight: 600; color: #F5F3EE; }
+.packageMeta { font-size: 12px; color: #C9C2B8; }
+.packagePrice { color: #D4AF37; font-weight: 700; }
+.packageCTA { margin-top: 8px; }
