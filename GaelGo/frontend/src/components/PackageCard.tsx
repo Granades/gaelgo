@@ -1,3 +1,5 @@
+import "../styles/PackageCard.css";
+
 type PackageCardProps = {
     title : string;
     destination : string;
@@ -17,7 +19,7 @@ export default function PackageCard({title, destination, nights, price, date, on
             <div className = "packageBody">
                 <div className = "packageTitle">{title}</div>
                 <div className = "packageMeta">
-                    {destination} {nights} - {date}</div>
+                    {destination} {nights} nights - {date}</div>
                 <div className = "packagePrice">€{price}</div>
                 <div className = "packageCTA">
                     <button className = "btnPrimary">View details</button>

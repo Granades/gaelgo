@@ -1,4 +1,8 @@
 
+
+
+import "../styles/Chip.css";
+
 type ChipProps = {
     label : string;
     active? : boolean;

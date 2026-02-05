@@ -1,3 +1,5 @@
+import "../styles/PrimaryButton.css";
+
 type PrimaryProps = {
      label : string;
      onClick? : () => void;
