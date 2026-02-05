@@ -8,6 +8,9 @@
     "departureDate": "2026-03-06",
     "nights": 2,
     "departure": "Dublin",
+    "airline": "Ryanair",
+    "hotel": "Hotel Lumière (3★, Central)",
+    "description": "A quick weekend break with iconic sights and easy connections.",
     "includes": ["Return flight", "3★ hotel", "Breakfast"],
     "image": "paris.jpg"
   },
@@ -20,6 +23,9 @@
     "departureDate": "2026-03-20",
     "nights": 2,
     "departure": "Dublin",
+    "airline": "Aer Lingus",
+    "hotel": "Grand Place Inn (3★, Old Town)",
+    "description": "Museums, chocolate, and historic squares in a compact trip.",
     "includes": ["Return flight", "3★ hotel"],
     "image": "brussels.jpg"
   },
@@ -32,6 +38,9 @@
     "departureDate": "2026-04-10",
     "nights": 2,
     "departure": "Dublin",
+    "airline": "KLM",
+    "hotel": "Canal View Hotel (3★, Jordaan)",
+    "description": "Canals, bikes, and a museum pass in a short city break.",
     "includes": ["Return flight", "3★ hotel", "Museum ticket"],
     "image": "amsterdam.jpg"
   },
@@ -44,6 +53,9 @@
     "departureDate": "2026-04-24",
     "nights": 3,
     "departure": "Dublin",
+    "airline": "TAP Air Portugal",
+    "hotel": "Alfama Stay (3★, Riverside)",
+    "description": "Trams, viewpoints, and local food in a sunny break.",
     "includes": ["Return flight", "3★ hotel"],
     "image": "lisbon.jpg"
   },
@@ -56,6 +68,9 @@
     "departureDate": "2026-05-08",
     "nights": 4,
     "departure": "Dublin",
+    "airline": "Vueling",
+    "hotel": "Marina Coast (3★, Beachfront)",
+    "description": "Beach time plus architecture and tapas.",
     "includes": ["Return flight", "3★ hotel", "Breakfast"],
     "image": "barcelona.jpg"
   },
@@ -68,6 +83,9 @@
     "departureDate": "2026-05-22",
     "nights": 4,
     "departure": "Dublin",
+    "airline": "Ryanair",
+    "hotel": "Trastevere House (3★, Center)",
+    "description": "Ancient landmarks, food markets, and evening strolls.",
     "includes": ["Return flight", "3★ hotel", "Walking tour"],
     "image": "rome.jpg"
   },
@@ -80,6 +98,9 @@
     "departureDate": "2026-06-05",
     "nights": 4,
     "departure": "Dublin",
+    "airline": "Smartwings",
+    "hotel": "Old Town Suites (3★, Historic)",
+    "description": "Cobblestone streets and castle views in a classic city.",
     "includes": ["Return flight", "3★ hotel"],
     "image": "prague.jpg"
   },
@@ -92,6 +113,9 @@
     "departureDate": "2026-06-19",
     "nights": 5,
     "departure": "Dublin",
+    "airline": "Aer Lingus",
+    "hotel": "Mitte Stay (3★, Central)",
+    "description": "Museums, parks, and vibrant neighborhoods.",
     "includes": ["Return flight", "3★ hotel"],
     "image": "berlin.jpg"
   },
@@ -104,6 +128,9 @@
     "departureDate": "2026-07-03",
     "nights": 5,
     "departure": "Dublin",
+    "airline": "Austrian Airlines",
+    "hotel": "Ringstraße Hotel (4★, Center)",
+    "description": "Classical music, cafés, and imperial history.",
     "includes": ["Return flight", "4★ hotel", "Breakfast"],
     "image": "vienna.jpg"
   },
@@ -116,6 +143,9 @@
     "departureDate": "2026-07-17",
     "nights": 5,
     "departure": "Dublin",
+    "airline": "Aegean Airlines",
+    "hotel": "Acropolis View (4★, Central)",
+    "description": "Ancient sites plus an optional day excursion.",
     "includes": ["Return flight", "4★ hotel", "Excursion"],
     "image": "athens.jpg"
   },
@@ -128,6 +158,9 @@
     "departureDate": "2026-08-07",
     "nights": 4,
     "departure": "Dublin",
+    "airline": "SAS",
+    "hotel": "Nyhavn Stay (4★, Waterfront)",
+    "description": "Design, canals, and bike‑friendly streets.",
     "includes": ["Return flight", "4★ hotel"],
     "image": "copenhagen.jpg"
   },
@@ -140,6 +173,9 @@
     "departureDate": "2026-08-21",
     "nights": 4,
     "departure": "Dublin",
+    "airline": "Ryanair",
+    "hotel": "Old City Hotel (3★, Center)",
+    "description": "Historic squares and local markets.",
     "includes": ["Return flight", "3★ hotel"],
     "image": "krakow.jpg"
   },
@@ -152,6 +188,9 @@
     "departureDate": "2026-09-04",
     "nights": 5,
     "departure": "Dublin",
+    "airline": "Wizz Air",
+    "hotel": "Danube Spa Hotel (3★, Riverside)",
+    "description": "Thermal baths and river views.",
     "includes": ["Return flight", "3★ hotel", "Thermal baths ticket"],
     "image": "budapest.jpg"
   },
@@ -164,6 +203,9 @@
     "departureDate": "2026-09-18",
     "nights": 3,
     "departure": "Dublin",
+    "airline": "Iberia",
+    "hotel": "Plaza Central (3★, Center)",
+    "description": "Tapas, markets, and art museums.",
     "includes": ["Return flight", "3★ hotel"],
     "image": "madrid.jpg"
   },
@@ -176,6 +218,9 @@
     "departureDate": "2026-10-02",
     "nights": 5,
     "departure": "Dublin",
+    "airline": "Ryanair",
+    "hotel": "Riad Atlas (4★, Medina)",
+    "description": "Markets, spices, and desert‑style stays.",
     "includes": ["Return flight", "4★ hotel", "Traditional dinner"],
     "image": "marrakech.jpg"
   }
