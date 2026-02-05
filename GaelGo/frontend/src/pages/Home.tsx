@@ -5,7 +5,7 @@ export default function Home() {
     <div className="page">
       <header className="header">
         <div className="brand">GaelGo</div>
-        <div className="subtitle">Budget‑first trips from Dublin</div>
+        <div className="subtitle">GaelGo — No payments, redirects to providers with real prices</div>
       </header>
 
       <section className="hero">
@@ -59,8 +59,7 @@ export default function Home() {
       </section>
 
       <footer className="footer">
-        Made with ❤️ by <a href="https://granades.github.io/portfolio/" target="_blank" rel="noreferrer">Granades</a> · <a href="https://github.com/Granades" target="_blank" rel="noreferrer">GitHub</a> · Open to collaboration<br />
-        No payments — redirects to providers with real prices
+        Made with ❤️ by <a href="https://granades.github.io/portfolio/" target="_blank" rel="noreferrer">Granades</a> · <a href="https://github.com/Granades" target="_blank" rel="noreferrer">GitHub</a> · Open to collaboration
       </footer>
     </div>
   );
