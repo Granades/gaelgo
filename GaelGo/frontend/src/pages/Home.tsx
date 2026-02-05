@@ -57,10 +57,6 @@ export default function Home() {
           <div className="card" />
         </div>
       </section>
-
-      <footer className="footer">
-        Made with ❤️ by <a href="https://granades.github.io/portfolio/" target="_blank" rel="noreferrer">Granades</a> · <a href="https://github.com/Granades" target="_blank" rel="noreferrer">GitHub</a> · Open to collaboration
-      </footer>
     </div>
   );
 }
