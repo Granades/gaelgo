@@ -16,7 +16,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer className="footer">
-        No cobramos por este trabajo. Desarrollado por Granades - Github - Contacta para desarrollos especificos
+        We don’t charge for this work. Built by <a href="https://github.com/Granades" target="_blank" rel="noreferrer">Granades</a> · <a href="https://github.com/Granades" target="_blank" rel="noreferrer">GitHub</a> · Contact me for specific development
       </footer>
     </>
   );
