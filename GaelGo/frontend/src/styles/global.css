@@ -9,8 +9,13 @@
 
 body {
   margin: 0;
-  background: #0F0F10;
   color: #F5F3EE;
+  background:
+    linear-gradient(180deg, rgba(15,15,16,0.88), rgba(15,15,16,0.98)),
+    url("../assets/ireland-hero.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 a {
