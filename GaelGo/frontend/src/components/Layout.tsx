@@ -9,7 +9,6 @@ export default function Layout() {
         <nav className="navInner">
           <Link to="/" className="brand">GaelGo</Link>
           <Link to="/packages" className="navLink">Packages</Link>
-          <Link to="/reserve" className="navLink">Reserve</Link>
         </nav>
       </header>
       <main className="container">
