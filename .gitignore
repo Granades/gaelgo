@@ -12,15 +12,4 @@ dist/
 # Logs
 *.log
 
-# Local workspace files (Clawdbot)
-AGENTS.md
-BOOTSTRAP.md
-HEARTBEAT.md
-IDENTITY.md
-SOUL.md
-TOOLS.md
-USER.md
-canvas/
 
-# Other projects in workspace
-Nube/
