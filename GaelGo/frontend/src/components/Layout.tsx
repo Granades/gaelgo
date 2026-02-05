@@ -15,6 +15,9 @@ export default function Layout() {
       <main className="container">
         <Outlet />
       </main>
+      <footer className="footer">
+        No cobramos por este trabajo. Desarrollado por Granades - Github - Contacta para desarrollos especificos
+      </footer>
     </>
   );
 }

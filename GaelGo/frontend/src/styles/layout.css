@@ -29,3 +29,11 @@
 .container {
   padding: 16px 24px;
 }
+
+.footer {
+  margin-top: 24px;
+  padding: 16px 24px;
+  border-top: 1px solid #2A2D33;
+  color: #C9C2B8;
+  font-size: 12px;
+}
