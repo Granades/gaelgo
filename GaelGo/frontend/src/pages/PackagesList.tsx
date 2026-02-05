@@ -11,14 +11,14 @@ export default function PackagesList() {
         <div>
             <h2>Packages</h2>
 
-            {/* Filters */}
+
             <div style={{ display: "flex", gap: "8px", margin: "12px 0" }}>
                 <Chip label="€200" />
                 <Chip label="€300" />
                 <Chip label="€400" />
             </div>
 
-            {/* Packages grid */}
+
             <div style={{ display: "grid", gap: "16px", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
                 {mockPackages.map((p) => (
                     <PackageCard

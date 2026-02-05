@@ -1,0 +1,93 @@
+.reservePage {
+    display: grid;
+    gap: 16px;
+}
+
+.infoCard {
+    background: #1A1B1E;
+    border: 1px solid #2A2D33;
+    border-radius: 12px;
+    padding: 16px;
+}
+.infoTitle {
+    color: #D4AF37;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.infoList {
+    margin: 0;
+    padding-left: 18px;
+    color: #C9C2B8;
+    font-size: 14px;
+}
+
+.infoFooter {
+    margin-top: 8px;
+    color: #C9C2B8;
+    font-size: 12px;
+}
+
+.providerRow {
+    display: grid;
+    grid-template-columns: 40px 1fr auto auto;
+    align-items: center;
+    gap: 12px;
+    background: #1A1B1E;
+    border: 1px solid #2A2D33;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+.providerIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #2A2D33;
+}
+
+.providerName {
+    color: #F5F3EE;
+    font-weight: 600;
+}
+
+.linkBtn {
+    background: #D4AF37;
+    color: #0F0F10;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.shareBtn {
+    background: transparent;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.totalCard {
+    background: #1A1B1E;
+    border: 1px solid #2A2D33;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalLabel {
+    color: #C9C2B8;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.totalValue {
+    color: #D4AF37;
+    font-size: 20px;
+    font-weight: 700;
+}
+
