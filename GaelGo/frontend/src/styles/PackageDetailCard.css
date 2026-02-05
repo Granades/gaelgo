@@ -1,0 +1,65 @@
+.detailPage {
+  display: grid;
+  gap: 16px;
+}
+
+.detailHero {
+  height: 220px;
+  border-radius: 14px;
+  border: 1px solid #2A2D33;
+  background: linear-gradient(135deg, #7B1E3A, #0F0F10);
+}
+
+.detailHeader {
+  display: grid;
+  gap: 6px;
+}
+
+.detailTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #F5F3EE;
+}
+
+.detailMeta {
+  display: flex;
+  gap: 12px;
+  color: #C9C2B8;
+  font-size: 13px;
+}
+
+.detailInfoRow {
+  color: #C9C2B8;
+  font-size: 13px;
+}
+
+.detailLabel {
+  color: #F5F3EE;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.detailPrice {
+  color: #D4AF37;
+  font-weight: 700;
+}
+
+.detailCard {
+  background: #1A1B1E;
+  border: 1px solid #2A2D33;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.detailList {
+  margin: 0;
+  padding-left: 18px;
+  color: #C9C2B8;
+  font-size: 13px;
+}
+
+.detailCTA {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
