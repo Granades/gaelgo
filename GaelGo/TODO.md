@@ -1,134 +1,101 @@
-# GaelGo — Ordered TODO (Sprint 1)
+# GaelGo — Backend TODO (Sprint 2)
 
-> Purpose: build the Web MVP first (React + Vite + TS), then mirror to Kotlin.
-> Use this list as if it were Jira tickets: do them in order.
-
----
-
-## 1) Routing Setup
-**Goal:** Enable navigation between pages.
-
-**Tasks**
-- Install React Router.
-- Create the following pages:
-  - `Home`
-  - `PackagesList`
-  - `PackageDetail`
-  - `Reserve`
-- Add routes in `App.tsx`.
-- Add a simple top nav (logo + “Packages” link).
-
-**Acceptance**
-- Navigation works between all pages.
-- URL reflects page (e.g., `/packages`, `/packages/1`, `/reserve`).
-
-**Status:** Done ✅
+> Purpose: build the Spring Boot backend to match the frontend MVP.
+> Use this list as ordered tickets.
 
 ---
 
-## 2) Base Layout + Navigation
-**Goal:** Shared layout used by all pages.
+## 1) Project setup
+**Goal:** Create Spring Boot project with required dependencies.
 
 **Tasks**
-- Create `Layout` component (header + container).
-- Move nav into `Layout`.
-- Wrap routes with `Layout`.
+- Create `backend/` Spring Boot project
+- Add dependencies: Web, Validation, JPA, MySQL Driver
+- Configure application.yml (port, DB connection)
 
 **Acceptance**
-- All pages show consistent header and spacing.
+- App starts with `./mvnw spring-boot:run`
 
 ---
 
-## 3) Mock Data Layer
-**Goal:** UI uses local mock data before backend.
+## 2) Data model (Entities)
+**Goal:** Implement DB models.
 
 **Tasks**
-- Create `src/services/mockPackages.ts`.
-- Export an array of 5–6 packages (use seed data).
-- Each package should include:
-  - `id`, `title`, `destination`, `price`, `currency`, `departureDate`, `nights`, `departure`, `includes`, `image`
+- `Package` entity
+- `Reservation` entity
+- (Optional) `Favorite` entity
 
 **Acceptance**
-- Pages can import the array without errors.
-
-**Status:** Not started
+- Entities map correctly to tables
 
 ---
 
-## 4) UI Components (Basic)
-**Goal:** Reusable UI for consistent styling.
+## 3) Repositories
+**Goal:** Data access layer.
 
 **Tasks**
-- `PackageCard` component
-- `PrimaryButton` component
-- `Chip` component
+- `PackageRepository`
+- `ReservationRepository`
 
 **Acceptance**
-- Components are used in `PackagesList` and `Home`.
+- Basic CRUD available
 
 ---
 
-## 5) Packages List Page
-**Goal:** Display all packages with filters UI.
+## 4) Services
+**Goal:** Business logic layer.
 
 **Tasks**
-- Render list of packages from mock data.
-- Add filter chips (200/300/400).
-- Add date input (no real filtering yet).
+- `PackageService`
+- `ReservationService`
 
 **Acceptance**
-- Cards render with price, title, nights.
-- Clicking a card navigates to detail page.
+- Services used by controllers
 
 ---
 
-## 6) Package Detail Page
-**Goal:** Show one package’s full detail.
+## 5) Controllers (API)
+**Goal:** Expose REST endpoints.
 
 **Tasks**
-- Load package by route param `id`.
-- Display full info + includes list.
-- Add “Reserve interest” CTA.
+- `GET /api/v1/packages` (filters)
+- `GET /api/v1/packages/{id}`
+- `POST /api/v1/reservations`
 
 **Acceptance**
-- Works for valid id.
-- Shows fallback message if id not found.
+- Endpoints respond with JSON
 
 ---
 
-## 7) Reserve Page
-**Goal:** Capture interest (no payment).
+## 6) Seed data
+**Goal:** Load initial packages.
 
 **Tasks**
-- Simple form: name, email, phone (optional).
-- On submit: log values to console.
-- Add success message UI (local state).
+- Load from JSON or SQL on startup
 
 **Acceptance**
-- Form submits without crash.
-- Shows confirmation message.
+- Packages available on first run
 
 ---
 
-## 8) Styling Pass
-**Goal:** Make UI consistent with Temple Bar palette.
+## 7) Validation & error handling
+**Goal:** Clean API responses.
 
 **Tasks**
-- Apply colors, spacing, and typography from style guide.
-- Ensure buttons, chips, cards look consistent.
+- DTO validation
+- Global exception handler
 
 **Acceptance**
-- UI matches dark/gold/burgundy style.
+- 400/404 handled cleanly
 
 ---
 
-## 9) Cleanup
-**Goal:** Keep project tidy.
+## 8) Integration test (basic)
+**Goal:** Ensure endpoints work.
 
 **Tasks**
-- Remove unused template files if any.
-- Ensure `npm run build` passes.
+- Test packages list + detail
 
 **Acceptance**
-- Build succeeds.
-- No unused sample code remains.
+- Tests pass
