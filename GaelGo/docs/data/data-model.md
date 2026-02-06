@@ -1,8 +1,10 @@
 # GaelGo — Data Model (PostgreSQL)
 
+> **Note:** This project uses a **SINGULAR** naming approach (e.g., `package`, `provider`).
+
 ## Entities
 
-### 1) packages
+### 1) package
 Stores fixed‑price travel packages.
 
 **Fields**
@@ -35,40 +37,35 @@ Normalized provider links for each package.
 
 **Fields**
 - package_provider_id (PK, UUID or SERIAL)
-- package_id (FK → packages.package_id)
+- package_id (FK → package.package_id)
 - provider_id (FK → provider.provider_id)
 - url (VARCHAR)
 - last_checked (TIMESTAMP, nullable)
 - price (DECIMAL(10,2))
 
-### 4) package_price_history (optional)
+### 4) package_price_history (no mvp, later)
 Tracks price changes.
 
 **Fields**
 - price_history_id (PK, UUID or SERIAL)
-- package_id (FK → packages.package_id)
+- package_id (FK → package.package_id)
 - provider_id (FK → provider.provider_id)
 - price (DECIMAL(10,2))
 - timestamp (TIMESTAMP)
 
-### 5) subscriber (optional)
+### 5) subscriber (no mvp, later)
 Email capture for offers.
 
 **Fields**
 - subscriber_id (PK, UUID or SERIAL)
 - email (VARCHAR, unique)
-- package_id (FK → packages.package_id, nullable)
+- package_id (FK → package.package_id, nullable)
 - created_at (TIMESTAMP)
 - active (BOOLEAN)
 
 ## Relationships
-- packages 1 — * package_provider_link
+- package 1 — * package_provider_link
 - provider 1 — * package_provider_link
-- packages 1 — * package_price_history
+- package 1 — * package_price_history
 - provider 1 — * package_price_history
-- packages 0/1 — * subscriber
-
-## Notes
-- Use JSON for `includes` if you want structured data.
-- `package_id` in subscriber is optional if the user subscribes globally.
-- UUIDs are recommended for public‑facing IDs.
+- package 0/1 — * subscriber

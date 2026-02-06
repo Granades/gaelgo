@@ -1,9 +1,11 @@
 # GaelGo — API Spec (Spring Boot REST)
 
+> **Note:** This project uses a **SINGULAR** naming approach (e.g., `/package`, `/provider`).
+
 Base URL: `/api/v1`
 
-## 1) Packages
-### GET `/packages`
+## 1) Package
+### GET `/package`
 List packages with optional filters.
 
 **Query params**
@@ -32,7 +34,7 @@ List packages with optional filters.
 ]
 ```
 
-### GET `/packages/{id}`
+### GET `/package/{id}`
 Get package details (same fields as above).
 
 **Response 200**
@@ -57,7 +59,7 @@ Get package details (same fields as above).
 ---
 
 ## 2) Provider links
-### GET `/packages/{id}/providers`
+### GET `/package/{id}/provider`
 Get provider links for a package.
 
 **Response 200**
@@ -72,11 +74,3 @@ Get provider links for a package.
   }
 ]
 ```
-
----
-
-## Conventions
-- JSON responses
-- Validation errors → 400
-- Not found → 404
-- Server errors → 500
