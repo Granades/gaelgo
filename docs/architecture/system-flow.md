@@ -3,7 +3,7 @@
 ## High‑level architecture
 - **Clients:** Mobile app + Web app
 - **Backend:** Java (Spring Boot) REST API (single source of truth)
-- **Database:** MySQL stores packages + interest reservations + favorites
+- **Database:** PostgreSQL stores packages + providers + provider links
 
 ```
 [Mobile App]        [Web App]
@@ -31,21 +31,15 @@
 4. API returns full package data
 5. Client renders detail view
 
-### 3) Reserve interest (no payment)
-1. User fills form (name/email)
-2. Client calls `POST /reservations`
-3. API validates input and saves record
-4. API returns confirmation
-5. Client shows success message
-
-### 4) Save favorites (optional)
-1. User taps “save”
-2. Client calls `POST /favorites`
-3. API saves favorite in DB
-4. Client updates UI
+### 3) Continue to provider (no payment)
+1. User taps “Reserve interest”
+2. Client calls `GET /packages/:id` (if not already loaded)
+3. UI shows provider links
+4. User clicks provider link
+5. Booking continues on provider site
 
 ## Key principles
 - **Single backend for app + web** (no duplicated logic)
-- **Stateless API** (simple, easy to demo)
-- **No payment** (redirect to provider if needed)
+- **Stateless API** (simple)
+- **No payment** (redirect to provider links)
 - **Seed data** (fixed packages for a stable demo)
