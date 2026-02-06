@@ -15,7 +15,7 @@ List packages with optional filters.
 ```json
 [
   {
-    "id": 1,
+    "id": "PKG-001",
     "title": "Dublin → Paris (2‑night escape)",
     "destination": "Paris, France",
     "price": 200,
@@ -23,6 +23,9 @@ List packages with optional filters.
     "departureDate": "2026-03-06",
     "nights": 2,
     "departure": "Dublin",
+    "airline": "Ryanair",
+    "hotel": "Hotel Lumière (3★, Central)",
+    "description": "A quick weekend break with iconic sights and easy connections.",
     "includes": ["Return flight", "3★ hotel", "Breakfast"],
     "image": "paris.jpg"
   }
@@ -30,57 +33,43 @@ List packages with optional filters.
 ```
 
 ### GET `/packages/{id}`
-Get package details.
+Get package details (same fields as above).
 
 **Response 200**
 ```json
-{ "id": 1, "title": "...", "destination": "..." }
-```
-
----
-
-## 2) Reservations (interest only)
-### POST `/reservations`
-Create a reservation of interest (no payment).
-
-**Request body**
-```json
 {
-  "packageId": 1,
-  "name": "John Doe",
-  "email": "john@email.com",
-  "phone": "+353000000"
+  "id": "PKG-001",
+  "title": "...",
+  "destination": "...",
+  "price": 200,
+  "currency": "EUR",
+  "departureDate": "2026-03-06",
+  "nights": 2,
+  "departure": "Dublin",
+  "airline": "...",
+  "hotel": "...",
+  "description": "...",
+  "includes": ["..."],
+  "image": "..."
 }
 ```
 
-**Response 201**
-```json
-{ "id": 10, "status": "CONFIRMED" }
-```
-
 ---
 
-## 3) Favorites (optional)
-### POST `/favorites`
-Save a favorite.
-
-**Request body**
-```json
-{ "email": "john@email.com", "packageId": 1 }
-```
-
-**Response 201**
-```json
-{ "id": 12 }
-```
-
-### GET `/favorites?email=...`
-List favorites by email.
+## 2) Provider links
+### GET `/packages/{id}/providers`
+Get provider links for a package.
 
 **Response 200**
 ```json
 [
-  { "id": 12, "packageId": 1 }
+  {
+    "providerId": "PROV-1",
+    "name": "Provider Name",
+    "url": "https://example.com/deal",
+    "lastChecked": "2026-02-01T10:00:00Z",
+    "price": 200
+  }
 ]
 ```
 
