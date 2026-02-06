@@ -1,4 +1,4 @@
-# GaelGo — Data Model (MySQL)
+# GaelGo — Data Model (PostgreSQL)
 
 ## Entities
 
@@ -6,43 +6,69 @@
 Stores fixed‑price travel packages.
 
 **Fields**
-- id (PK, INT, auto)
+- package_id (PK, UUID or SERIAL)
 - title (VARCHAR)
 - destination (VARCHAR)
-- price (INT) — 200/300/400
+- price (DECIMAL(10,2))
 - currency (CHAR(3)) — EUR
 - departure_date (DATE)
 - nights (INT)
 - departure (VARCHAR) — Dublin
-- includes (TEXT) — comma list or JSON
+- airline (VARCHAR)
+- hotel (VARCHAR, nullable)
+- description (TEXT)
+- includes (JSON or TEXT)
 - image (VARCHAR)
 - created_at (TIMESTAMP)
 
-### 2) reservations
-Captures “interest” reservations (no payments).
+### 2) provider
+Stores providers.
 
 **Fields**
-- id (PK, INT, auto)
-- package_id (FK → packages.id)
+- provider_id (PK, UUID or SERIAL)
 - name (VARCHAR)
-- email (VARCHAR)
-- phone (VARCHAR, nullable)
-- created_at (TIMESTAMP)
+- base_url (VARCHAR)
+- image (VARCHAR)
 
-### 3) favorites (optional)
-Stores user favorites (lightweight, no login).
+### 3) package_provider_link
+Normalized provider links for each package.
 
 **Fields**
-- id (PK, INT, auto)
-- email (VARCHAR) — lightweight user identifier
-- package_id (FK → packages.id)
+- package_provider_id (PK, UUID or SERIAL)
+- package_id (FK → packages.package_id)
+- provider_id (FK → provider.provider_id)
+- url (VARCHAR)
+- last_checked (TIMESTAMP, nullable)
+- price (DECIMAL(10,2))
+
+### 4) package_price_history (optional)
+Tracks price changes.
+
+**Fields**
+- price_history_id (PK, UUID or SERIAL)
+- package_id (FK → packages.package_id)
+- provider_id (FK → provider.provider_id)
+- price (DECIMAL(10,2))
+- timestamp (TIMESTAMP)
+
+### 5) subscriber (optional)
+Email capture for offers.
+
+**Fields**
+- subscriber_id (PK, UUID or SERIAL)
+- email (VARCHAR, unique)
+- package_id (FK → packages.package_id, nullable)
 - created_at (TIMESTAMP)
+- active (BOOLEAN)
 
 ## Relationships
-- packages 1 — * reservations
-- packages 1 — * favorites
+- packages 1 — * package_provider_link
+- provider 1 — * package_provider_link
+- packages 1 — * package_price_history
+- provider 1 — * package_price_history
+- packages 0/1 — * subscriber
 
 ## Notes
-- Keep it minimal for MVP.
-- “includes” can be stored as JSON if preferred.
-- Email is used as a lightweight user ID (no auth).
+- Use JSON for `includes` if you want structured data.
+- `package_id` in subscriber is optional if the user subscribes globally.
+- UUIDs are recommended for public‑facing IDs.
