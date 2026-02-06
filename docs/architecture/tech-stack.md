@@ -1,14 +1,14 @@
-# GaelGo — Tech Stack (Professional)
+# GaelGo — Tech Stack
 
 ## Backend
 - **Java + Spring Boot**
 - REST API (JSON)
 - Validation + DTOs
-- Optional: Spring Security (later)
+- Spring Security 
 
 ## Database
-- **MySQL**
-- Tables: packages, reservations, favorites
+- **PostgreSQL**
+- Tables: package, subscriber, provider, package_price_history, package_provider_link
 
 ## Mobile
 - **Kotlin (Android)**
@@ -19,8 +19,3 @@
 - **React**
 - Vite + Axios
 - Same endpoints as mobile
-
-## Why this stack
-- Enterprise‑ready
-- Strong for CV
-- Clear separation of concerns
