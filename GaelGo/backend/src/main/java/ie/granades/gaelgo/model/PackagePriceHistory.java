@@ -23,13 +23,13 @@ public class PackagePriceHistory {
 
     //Many ProviderLink price to one package
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "packageId", nullable = false)
+    @JoinColumn(name = "package_id", nullable = false)
     @JsonIgnore // Avoid infinite loop //Remplace later for DTO
     private Package travelPackage;
 
     //Many Package price history to one provider
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "providerId", nullable = false)
+    @JoinColumn(name = "provider_id", nullable = false)
     @JsonIgnore // Avoid infinite loop //Remplace later for DTO
     private Provider provider;
 
@@ -37,7 +37,7 @@ public class PackagePriceHistory {
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal price;
     @Column(nullable = false)
-    private LocalDateTime timeStamp = LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
 
     public PackagePriceHistory(Package travelPackage, Provider provider, BigDecimal price)

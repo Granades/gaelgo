@@ -11,7 +11,8 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "package_provider_links")
+@Table(name = "package_provider_links",
+uniqueConstraints = @UniqueConstraint(columnNames = {"package_id", "provider_id"}))
 @Setter
 @Getter
 @NoArgsConstructor
@@ -24,13 +25,13 @@ public class PackageProviderLink {
 
     //One package to many price history
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "packageId", nullable = false)
+    @JoinColumn(name = "package_id", nullable = false)
     @JsonIgnore // Avoid infinite loop //Remplace later for DTO
     private Package travelPackage;
 
     //One provider to many
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "providerId", nullable = false)
+    @JoinColumn(name = "provider_id", nullable = false)
     @JsonIgnore // Avoid infinite loop //Remplace later for DTO
     private Provider provider;
 

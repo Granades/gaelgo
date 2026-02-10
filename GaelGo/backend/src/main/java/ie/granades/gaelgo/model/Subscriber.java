@@ -24,7 +24,7 @@ public class Subscriber {
     //Many to one
     @JsonIgnore // Avoid infinite loop //Remplace later for DTO
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "packageId", nullable = false) //FK
+    @JoinColumn(name = "package_id", nullable = false) //FK
     private Package travelPackage;
 
     @Column(nullable = false)
