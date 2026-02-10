@@ -13,7 +13,7 @@ import java.util.List;
 public class PackageServiceImpl implements PackageService {
 
     private final PackageRepository packageRepository;
-    // Si ya tienes repos para historial, los inyectas aquí:
+    // price history later
     // private final PackagePriceHistoryRepository priceHistoryRepository;
 
     public PackageServiceImpl(PackageRepository packageRepository) {
@@ -37,7 +37,7 @@ public class PackageServiceImpl implements PackageService {
     @Transactional
     public Package create(Package travelPackage) {
         validatePackage(travelPackage);
-        // Si quieres normalizar:
+        //Normalice
         travelPackage.setCurrency(travelPackage.getCurrency().toUpperCase());
         return packageRepository.save(travelPackage);
     }
@@ -175,3 +175,4 @@ public class PackageServiceImpl implements PackageService {
         }
     }
 }
+
