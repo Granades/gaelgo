@@ -9,6 +9,8 @@ import java.util.List;
 
 public interface PackageService {
 
+    //Link
+    public List<PackageProviderLink> getProviderLinks(Long packageId);
     //CRUD
     List<Package> getAllPackages();
     Package getPackageById(Long id);

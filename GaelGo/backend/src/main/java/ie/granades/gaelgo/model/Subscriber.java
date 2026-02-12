@@ -11,7 +11,8 @@ import java.time.LocalDateTime;
 
 
 @Entity
-@Table(name = "subscribers")
+@Table(name = "subscribers",
+uniqueConstraints = @UniqueConstraint(columnNames = {"email", "package_id"})) //Prevents duplications
 @Setter
 @Getter
 @NoArgsConstructor
@@ -34,7 +35,7 @@ public class Subscriber {
     private LocalDateTime createdAt = LocalDateTime.now();
 
     @Column(nullable = false)
-    private boolean active;
+    private boolean active = true;
 
     //Constructor
 

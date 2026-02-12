@@ -5,6 +5,12 @@ import ie.granades.gaelgo.repository.PackageRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
+import ie.granades.gaelgo.model.PackagePriceHistory;
+import ie.granades.gaelgo.model.PackageProviderLink;
+import ie.granades.gaelgo.repository.PackagePriceHistoryRepository;
+import ie.granades.gaelgo.repository.PackageProviderLinkRepository;
+
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
@@ -13,12 +19,29 @@ import java.util.List;
 public class PackageServiceImpl implements PackageService {
 
     private final PackageRepository packageRepository;
-    // price history later
+    // Link && History Prices tables
+    private final PackageProviderLinkRepository linkRepository;
+    private final PackagePriceHistoryRepository priceHistoryRepository;
+
     // private final PackagePriceHistoryRepository priceHistoryRepository;
 
-    public PackageServiceImpl(PackageRepository packageRepository) {
+    public PackageServiceImpl(
+            PackageRepository packageRepository,
+            PackageProviderLinkRepository linkRepository,
+            PackagePriceHistoryRepository priceHistoryRepository
+    ) {
         this.packageRepository = packageRepository;
+        this.linkRepository = linkRepository;
+        this.priceHistoryRepository = priceHistoryRepository;
     }
+
+    // ----------------- ProviderLink ---------- //
+    @Override
+    public List<PackageProviderLink> getProviderLinks(Long packageId) {
+        getPackageById(packageId);
+        return linkRepository.findByTravelPackage_PackageId(packageId);
+    }
+
 
     // ---------------- CRUD ----------------
 
@@ -37,7 +60,7 @@ public class PackageServiceImpl implements PackageService {
     @Transactional
     public Package create(Package travelPackage) {
         validatePackage(travelPackage);
-        //Normalice
+
         travelPackage.setCurrency(travelPackage.getCurrency().toUpperCase());
         return packageRepository.save(travelPackage);
     }
@@ -76,7 +99,7 @@ public class PackageServiceImpl implements PackageService {
         packageRepository.deleteById(id);
     }
 
-    // ---------------- SEARCH ----------------
+    // ---------------- SEARCH ---------------- TODO: sustitute after mvp for one method
 
     @Override
     public List<Package> searchByDestination(String destination) {
@@ -90,7 +113,7 @@ public class PackageServiceImpl implements PackageService {
 
     @Override
     public List<Package> searchByMinPrice(BigDecimal minPrice) {
-        return packageRepository.findByPriceLessThanEqual(minPrice);
+        return packageRepository.findByPriceGreaterThanEqual(minPrice);
     }
 
     @Override
@@ -125,12 +148,13 @@ public class PackageServiceImpl implements PackageService {
         }
 
         travelPackage.setPrice(newPrice);
+        Package saved = packageRepository.save(travelPackage);
 
         // Save history
-        // PackagePriceHistory entry = new PackagePriceHistory(travelPackage, oldPrice, newPrice, reason, LocalDate.now());
-        // priceHistoryRepository.save(entry);
+         PackagePriceHistory entry = new PackagePriceHistory(travelPackage, oldPrice, newPrice, reason, LocalDate.now());
+         priceHistoryRepository.save(entry);
 
-        return packageRepository.save(travelPackage);
+        return saved;
     }
 
     // ---------------- VALIDATION ----------------
@@ -175,4 +199,3 @@ public class PackageServiceImpl implements PackageService {
         }
     }
 }
-
