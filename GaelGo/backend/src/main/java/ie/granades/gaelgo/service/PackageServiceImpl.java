@@ -1,6 +1,7 @@
 package ie.granades.gaelgo.service;
 
 import ie.granades.gaelgo.model.Package;
+import ie.granades.gaelgo.model.Provider;
 import ie.granades.gaelgo.repository.PackageRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
@@ -150,9 +151,9 @@ public class PackageServiceImpl implements PackageService {
         travelPackage.setPrice(newPrice);
         Package saved = packageRepository.save(travelPackage);
 
-        // Save history
-         PackagePriceHistory entry = new PackagePriceHistory(travelPackage, oldPrice, newPrice, reason, LocalDate.now());
-         priceHistoryRepository.save(entry);
+        // Save history (provider optional in manual updates)
+        PackagePriceHistory entry = new PackagePriceHistory(travelPackage, null, oldPrice, newPrice, reason);
+        priceHistoryRepository.save(entry);
 
         return saved;
     }
