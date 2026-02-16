@@ -3,6 +3,7 @@ package ie.granades.gaelgo.service;
 import ie.granades.gaelgo.model.Subscriber;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface SubscriberService {
 
@@ -10,7 +11,7 @@ public interface SubscriberService {
     void unsubscribe(String email, Long packageId);
     List<Subscriber> getSubscribersByPackage(Long packageId);
 
-    Optional<Subscriber> findByEmailAndTravelPackage_PackageId(String email, Long packageId);
+
 
     //Admin
     Subscriber setActive(Long subscriberId, boolean active);

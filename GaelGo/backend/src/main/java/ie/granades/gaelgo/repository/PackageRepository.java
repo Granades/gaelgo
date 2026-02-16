@@ -20,5 +20,5 @@ public interface PackageRepository extends JpaRepository <Package, Long>{
     List<Package> findByDestinationContainingIgnoreCaseAndPriceLessThanEqual(
             String destination, BigDecimal price);
 
-
+    List<Package> findByPriceGreaterThanEqual(BigDecimal minPrice);
 }

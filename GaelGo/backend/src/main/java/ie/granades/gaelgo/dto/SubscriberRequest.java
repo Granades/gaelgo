@@ -1,5 +1,6 @@
 package ie.granades.gaelgo.dto;
 
+
 public class SubscriberRequest {
     private String email;
     private Long packageId;

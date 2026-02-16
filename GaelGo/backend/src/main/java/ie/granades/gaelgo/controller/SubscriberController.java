@@ -1,4 +1,11 @@
 package ie.granades.gaelgo.controller;
+import ie.granades.gaelgo.dto.SubscriberRequest;
+import ie.granades.gaelgo.model.Subscriber;
+import ie.granades.gaelgo.service.SubscriberService;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/subscribers")
@@ -26,11 +33,9 @@ public class SubscriberController
     //Delete
     @DeleteMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void unsubscribe(@RequestBody SubscriberRequest request) {
-        subscriberService.unsubscribe(
-                request.getEmail(),
-                request.getPackageId()
-        );
+    public void unsubscribe(@RequestParam String email,
+                            @RequestParam Long packageId) {
+        subscriberService.unsubscribe(email, packageId);
     }
     //Read byPackage
     @GetMapping("/package/{packageId}")

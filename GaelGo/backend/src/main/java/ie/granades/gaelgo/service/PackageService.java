@@ -1,6 +1,7 @@
 package ie.granades.gaelgo.service;
 
 import ie.granades.gaelgo.model.Package;
+import ie.granades.gaelgo.model.PackageProviderLink;
 import ie.granades.gaelgo.repository.PackageRepository;
 
 import java.math.BigDecimal;
