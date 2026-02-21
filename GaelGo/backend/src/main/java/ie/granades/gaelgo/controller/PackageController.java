@@ -98,9 +98,9 @@ public class PackageController {
     /// END OF CRUD
     /// lINK
     @GetMapping("/{id}/provider")
-    public List<PackageProviderLink> getProviderLinks(Long packageId)
+    public List<PackageProviderLink> getProviderLinks(@PathVariable Long id)
     {
-        return packageService.getProviderLinks(packageId);
+        return packageService.getProviderLinks(id);
     }
     ///Search ---
     ///
