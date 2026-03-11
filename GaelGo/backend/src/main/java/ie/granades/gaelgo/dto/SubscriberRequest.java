@@ -1,6 +1,11 @@
 package ie.granades.gaelgo.dto;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class SubscriberRequest {
     private String email;
     private Long packageId;
@@ -12,16 +17,4 @@ public class SubscriberRequest {
         this.packageId = packageId;
     }
 
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    public Long getPackageId() {
-        return packageId;
-    }
-    public void setPackageId(Long packageId) {
-        this.packageId = packageId;
-    }
 }
