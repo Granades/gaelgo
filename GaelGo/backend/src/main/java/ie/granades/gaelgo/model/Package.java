@@ -52,7 +52,7 @@ public class Package {
     private String description;
 
     @Lob //+255 characteres for JSON later
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String includes;
 
     @Column(nullable = false)

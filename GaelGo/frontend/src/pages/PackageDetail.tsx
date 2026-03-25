@@ -1,18 +1,24 @@
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { mockPackages } from "../services/mockPackages";
+import { fetchPackageById } from "../services/packageService";
 import PackageDetailCard from "../components/PackageDetailCard";
 
 export default function PackageDetail() {
   const navigate = useNavigate();
   const { id } = useParams();
+  const [pkg, setPkg] = useState<any>(null);
 
-  const pkg = mockPackages.find((p) => p.id === id);
+  useEffect(() => {
+    if (id) {
+      fetchPackageById(id).then(setPkg).catch(console.error);
+    }
+  }, [id]);
 
   if (!pkg) {
     return (
       <div>
         <h2>Package Detail</h2>
-        <p>Package not found.</p>
+        <p>Loading...</p>
       </div>
     );
   }
@@ -30,7 +36,7 @@ export default function PackageDetail() {
         airline={pkg.airline}
         hotel={pkg.hotel}
         includes={pkg.includes}
-        onClick={() => navigate(`/reserve/${pkg.id}`)}
+        onClick={() => navigate(`/reserve/${pkg.packageId}`)}
       />
     </div>
   );
